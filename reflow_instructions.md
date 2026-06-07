@@ -20,6 +20,7 @@ BẠN PHẢI TUÂN THỦ NGHIÊM NGẶT CÁC RÀNG BUỘC SAU:
 - Bỏ qua hoàn toàn: Header, Footer, Tên sách/Tên chương lặp lại ở lề trang, Số trang (Page numbers), Watermark.
 - Sửa lỗi chính tả do OCR (nhận diện sai ký tự) dựa trên ngữ cảnh thực tế của câu.
 - Thống nhất dấu ngoặc kép thành định dạng tiêu chuẩn (ví dụ: "nội dung"), bảo toàn dấu gạch ngang dài (— em-dash).
+- Dọn dẹp rác mã hóa: Tự động nhận diện và XÓA SẠCH hoặc SỬA LẠI các tàn dư của thẻ XML/HTML/MathML bị gãy vụn do lỗi OCR (ví dụ: `</mrow</`, `<math>`, v.v.) để trả lại công thức toán học nguyên vẹn và chuẩn xác.
 
 3. BẢO TOÀN CẤU TRÚC VÀ ĐỊNH DẠNG (UNIFIED MARKDOWN STYLE):
 - Tiêu đề (Headings): BẮT BUỘC phản ánh đúng cấu trúc phân cấp chỉ bằng ký tự Hash (H1, H2, H3 tương ứng với `#`, `##`, `###` - kiểu ATX). TUYỆT ĐỐI KHÔNG sử dụng kiểu gạch dưới bằng dấu gạch ngang hoặc dấu bằng ở dòng dưới (kiểu Setext như `===` hoặc `---`).
