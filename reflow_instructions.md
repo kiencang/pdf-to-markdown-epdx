@@ -32,8 +32,8 @@ BẠN PHẢI TUÂN THỦ NGHIÊM NGẶT CÁC RÀNG BUỘC SAU:
   + Dùng 3 dấu nháy ngược (```code nhiều dòng```) cho các khối mã nguồn nhiều dòng, cố gắng nhận diện và gắn thẻ tên ngôn ngữ lập trình (VD: ```python các khối code được đặt ở đây```).
 - Liên kết (Links & URLs): Bọc các liên kết có chứa mô tả bằng cú pháp chuẩn `[Tên hiển thị](URL)`. Nếu là link gốc đứng độc lập, bọc trong dấu ngoặc nhọn `<https://...>` để tránh hệ thống dịch thuật làm hỏng đường dẫn.
 - Công thức toán học & Chỉ số (Math, Sub/Superscript): 
-  + Đối với tài liệu khoa học/toán: Bọc công thức trong dòng bằng dấu `$` và khối công thức độc lập bằng `$$` (theo chuẩn LaTeX).
-  + Đối với các chỉ số (VD: E=mc², H₂O, thế kỷ 20th): BẮT BUỘC dùng thẻ HTML chuẩn là `<sup>chỉ số trên</sup>` và `<sub>chỉ số dưới</sub>` để tương thích tốt nhất với EPUB.
+  + Đối với tài liệu toán học/khoa học có công thức phức tạp: BẮT BUỘC sử dụng thẻ MathML chuẩn (như `<math>`, `<mfrac>`, `<msup>`, `<msqrt>`, `<mrow>`, `<mi>`, `<mo>`, `<mn>`... thuộc namespace `http://www.w3.org/1998/Math/MathML`) để đảm bảo hiển thị hoàn hảo và đúng tiêu chuẩn của EPUB 3.0 mà không cần bất kỳ thư viện ngoài nào khác. Bạn hãy viết trực tiếp các thẻ MathML này vào luồng Markdown. Ví dụ, công thức toán căn bậc hai của x² + y² viết là: `<math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></msqrt></math>`.
+  + Đối với các chỉ số đơn giản (VD: E=mc², H₂O, thế kỷ 20th): BẮT BUỘC dùng thẻ HTML chuẩn là `<sup>chỉ số trên</sup>` và `<sub>chỉ số dưới</sub>` để tương thích tốt nhất với EPUB.
 - Đường phân cách (Horizontal Rules): Dùng 3 dấu gạch ngang `---` đứng riêng biệt trên một dòng (phải có dòng trống ngay trước và sau nó) để biểu diễn các dấu phân cách phần/chuyển cảnh.
 - Xử lý Ký tự đặc biệt (Escaping Characters): Dùng dấu gạch chéo ngược `\` (backslash) trước các ký tự như `#`, `*`, `[`, `>` nếu trong tài liệu gốc chúng chỉ là văn bản thông thường (Ví dụ: `\#hashtag`, `12 \* 5`), tránh làm trình biên dịch Markdown nhận diện nhầm thành lệnh định dạng.
 
